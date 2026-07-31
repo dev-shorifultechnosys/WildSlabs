@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4f1">
+  <meta name="description" content="Complete your WildSlabs limited-edition object reservation.">
+  <title>Checkout — WildSlabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/catalog.js" defer></script>
+  <script src="assets/js/inner-pages.js" defer></script>
+</head>
+<body class="inner-page checkout-page" data-page="checkout">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement" role="status"><p>Secure reservation / Insured delivery <span aria-hidden="true">↗</span></p></div>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="index.html" aria-label="WildSlabs home"><span>WILD</span><span>SLABS</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="collection.html?type=all">Continue viewing</a><a href="index.html#studio">Need help?</a></nav>
+    <div class="header-actions"><a class="text-button" href="checkout.html">Bag <span class="cart-count" data-cart-count>0</span></a></div>
+  </header>
+
+  <main id="main-content" class="checkout-main section-shell">
+    <div class="checkout-heading"><p class="eyebrow">Checkout / Private purchase</p><h1>Secure your<br>object.</h1></div>
+
+    <div class="checkout-empty" data-checkout-empty hidden>
+      <h2>Your bag is empty.</h2>
+      <a class="button button-dark" href="collection.html?type=all">Enter the viewing room <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="checkout-layout" data-checkout-content hidden>
+      <form class="checkout-form" data-checkout-form>
+        <section>
+          <div class="checkout-section-title"><span>01</span><h2>Contact</h2></div>
+          <div class="form-grid">
+            <label class="field field--wide">Email address<input type="email" name="email" autocomplete="email" required></label>
+            <label class="field">First name<input type="text" name="first_name" autocomplete="given-name" required></label>
+            <label class="field">Last name<input type="text" name="last_name" autocomplete="family-name" required></label>
+          </div>
+        </section>
+        <section>
+          <div class="checkout-section-title"><span>02</span><h2>Delivery</h2></div>
+          <div class="form-grid">
+            <label class="field field--wide">Address<input type="text" name="address" autocomplete="street-address" required></label>
+            <label class="field">City<input type="text" name="city" autocomplete="address-level2" required></label>
+            <label class="field">Postal code<input type="text" name="postal_code" autocomplete="postal-code" required></label>
+            <label class="field field--wide">Country<select name="country" autocomplete="country-name" required><option value="">Select country</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Australia</option><option>Singapore</option><option>Other</option></select></label>
+          </div>
+        </section>
+        <section>
+          <div class="checkout-section-title"><span>03</span><h2>Reservation</h2></div>
+          <p class="checkout-disclaimer">This static prototype captures the full checkout journey. Secure payment will connect to WooCommerce during the WordPress build.</p>
+          <button class="button button-dark checkout-submit" type="submit">Complete reservation <span aria-hidden="true">↗</span></button>
+          <p class="form-message" data-checkout-message aria-live="polite"></p>
+        </section>
+      </form>
+
+      <aside class="order-summary" aria-labelledby="summary-title">
+        <div class="checkout-section-title"><span>Bag</span><h2 id="summary-title">Order summary</h2></div>
+        <div data-checkout-items></div>
+        <dl class="order-totals">
+          <div><dt>Subtotal</dt><dd data-checkout-subtotal>$0</dd></div>
+          <div><dt>Insured delivery</dt><dd>Complimentary</dd></div>
+          <div class="order-total"><dt>Total</dt><dd data-checkout-total>$0</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer section-shell checkout-footer">
+    <a class="footer-wordmark" href="index.html">WILDSLABS</a>
+    <div class="footer-grid"><div><p>Assurance</p><span>Authenticated editions</span></div><div><p>Delivery</p><span>Tracked and insured</span></div><div><p>Support</p><a href="index.html#studio">Private enquiry</a></div><div class="footer-note"><p>WildSlabs / 2026</p><span>Made for collectors,<br>not algorithms.</span></div></div>
+  </footer>
+</body>
+</html>
+

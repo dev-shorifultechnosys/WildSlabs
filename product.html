@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Explore a limited-edition WildSlabs object in an interactive 360-degree viewer.">
+  <title>Object — WildSlabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/catalog.js" defer></script>
+  <script src="assets/js/inner-pages.js" defer></script>
+</head>
+<body class="inner-page product-page" data-page="product">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="announcement" role="status"><p>Authenticated object / Numbered edition <span aria-hidden="true">↗</span></p></div>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="index.html" aria-label="WildSlabs home"><span>WILD</span><span>SLABS</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="collection.html?type=all">Collections</a>
+      <a href="index.html#new-release">New release</a>
+      <a href="index.html#studio">Studio</a>
+    </nav>
+    <div class="header-actions">
+      <a class="text-button" href="checkout.html">Bag <span class="cart-count" data-cart-count>0</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu"><span class="sr-only">Open menu</span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <nav aria-label="Menu navigation">
+      <a href="collection.html?type=all"><span>01</span> Collections</a>
+      <a href="collection.html?type=sport"><span>02</span> Sport Study</a>
+      <a href="collection.html?type=culture"><span>03</span> Culture Archive</a>
+      <a href="index.html#studio"><span>04</span> Studio</a>
+    </nav>
+    <p>Limited objects for sport and culture collectors.</p>
+  </div>
+
+  <main id="main-content" data-product-page>
+    <div class="product-breadcrumb section-shell"><a href="collection.html?type=all">Viewing room</a><span>/</span><span data-product-name>Object</span></div>
+
+    <section class="product-page-layout section-shell" aria-labelledby="product-title">
+      <!-- A six-face CSS 3D model: pointer drag, touch drag and arrow keys all work. -->
+      <div class="object-viewer" data-object-viewer tabindex="0" role="slider" aria-label="Interactive 360 degree product viewer. Drag or use arrow keys to rotate." aria-valuemin="0" aria-valuemax="359" aria-valuenow="0">
+        <div class="viewer-stage" aria-hidden="true">
+          <div class="slab-model" data-slab-model>
+            <div class="slab-face slab-face--front"><img data-product-image src="assets/images/culture-slab.webp" alt=""></div>
+            <div class="slab-face slab-face--back"><span>W/S</span><small data-product-code>WS / 2026</small></div>
+            <div class="slab-face slab-face--left"></div>
+            <div class="slab-face slab-face--right"></div>
+            <div class="slab-face slab-face--top"></div>
+            <div class="slab-face slab-face--bottom"></div>
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <p><span class="viewer-status-dot"></span> Drag to rotate 360°</p>
+          <div>
+            <button type="button" data-viewer-spin aria-pressed="true">Pause rotation <span aria-hidden="true">↻</span></button>
+            <button type="button" data-viewer-reset>Reset <span aria-hidden="true">↺</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-page-copy">
+        <div class="product-status"><p data-product-code>WS / 2026</p><p class="availability"><span></span> <span data-product-remaining>Available</span></p></div>
+        <h1 id="product-title" data-product-name>Object</h1>
+        <p class="product-page-description" data-product-description></p>
+        <dl class="product-specs">
+          <div><dt>Edition</dt><dd data-product-edition></dd></div>
+          <div><dt>Material</dt><dd data-product-material></dd></div>
+          <div><dt>Dimensions</dt><dd data-product-dimensions></dd></div>
+          <div><dt>Certificate</dt><dd data-product-certificate></dd></div>
+        </dl>
+        <div class="product-page-buy">
+          <p><strong data-product-price>$0</strong><span>USD / Taxes excluded</span></p>
+          <button class="button button-dark" type="button" data-product-add>Add to bag <span aria-hidden="true">+</span></button>
+        </div>
+        <div class="product-service-notes">
+          <p>Complimentary insured delivery on this release.</p>
+          <a class="arrow-link" href="index.html#studio">Private enquiry <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="object-story section-shell">
+      <p class="eyebrow">Object notes</p>
+      <div><h2>A physical record<br>of a visual moment.</h2><p>Each WildSlabs object is printed with archival pigments, sealed in optically clear acrylic and finished individually by hand.</p></div>
+    </section>
+
+    <section class="related-objects section-shell" aria-labelledby="related-title">
+      <div class="section-heading"><div><p class="eyebrow">Same collection</p><h2 id="related-title">Continue viewing.</h2></div></div>
+      <div class="product-grid" data-related-grid></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-wordmark" href="index.html">WILDSLABS</a>
+    <div class="footer-grid">
+      <div><p>Navigate</p><a href="collection.html?type=all">Collections</a><a href="index.html#new-release">Releases</a><a href="index.html#studio">Studio</a></div>
+      <div><p>Collections</p><a href="collection.html?type=sport">Sport Study</a><a href="collection.html?type=culture">Culture Archive</a></div>
+      <div><p>Information</p><a href="information.html#shipping">Shipping</a><a href="information.html#authenticity">Authenticity</a><a href="information.html#terms">Terms</a></div>
+      <div class="footer-note"><p>WildSlabs / 2026</p><span>Made for collectors,<br>not algorithms.</span></div>
+    </div>
+  </footer>
+
+  <div class="bag-toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>
+

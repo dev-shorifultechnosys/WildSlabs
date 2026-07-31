@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4f1">
+  <meta name="description" content="WildSlabs — limited-edition sports and culture collectibles, curated as objects worth keeping.">
+  <title>WildSlabs — Limited Edition Collectibles</title>
+
+  <!-- Performance: establish third-party font connections early. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Minimal announcement bar. Keep updates concise to preserve the gallery mood. -->
+  <div class="announcement" role="status">
+    <p>Edition 001 now viewing <span aria-hidden="true">↗</span></p>
+  </div>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#top" aria-label="WildSlabs home">
+      <span>WILD</span><span>SLABS</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="collection.html?type=all">Collections</a>
+      <a href="#new-release">New release</a>
+      <a href="collection.html?type=all">Archive</a>
+      <a href="#studio">Studio</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="text-button cart-trigger" type="button" data-open-cart aria-controls="cart-drawer">
+        Bag <span class="cart-count" data-cart-count>0</span>
+      </button>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Open menu</span>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen menu mirrors the primary navigation on every device. -->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <nav aria-label="Menu navigation">
+      <a href="collection.html?type=all"><span>01</span> Collections</a>
+      <a href="#new-release"><span>02</span> New release</a>
+      <a href="collection.html?type=all"><span>03</span> Archive</a>
+      <a href="#studio"><span>04</span> Studio</a>
+    </nav>
+    <p>Limited objects for sport and culture collectors.</p>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero: restrained copy and one oversized product shot create the gallery-first experience. -->
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Independent collectible house / Est. 2026</p>
+        <h1 id="hero-title">Objects worth<br><em>keeping.</em></h1>
+        <div class="hero-intro">
+          <p>Limited-edition sports and culture pieces, selected for the stories they hold and the rooms they change.</p>
+          <a class="arrow-link" href="#collections">View featured collection <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <figure class="hero-art reveal" data-delay="1">
+        <!--
+          Automatic hero showcase
+          Each slide uses object-fit: contain so the complete artwork remains visible.
+          JavaScript adds auto-play, pause and manual navigation without a library.
+        -->
+        <div class="hero-showcase" data-hero-showcase aria-roledescription="carousel" aria-label="Featured WildSlabs objects">
+          <div class="hero-showcase-track" aria-live="off">
+            <article class="hero-slide is-active" data-hero-slide aria-hidden="false">
+              <img src="assets/images/hero-collectible.webp" alt="Signal Study No. 01 abstract collectible in a bright gallery" width="1536" height="960" fetchpriority="high">
+            </article>
+            <article class="hero-slide" data-hero-slide aria-hidden="true">
+              <img src="assets/images/sports-slab.webp" alt="Field Lines sports-inspired acrylic collectible" width="1254" height="1254">
+            </article>
+            <article class="hero-slide hero-slide--dark" data-hero-slide aria-hidden="true">
+              <img src="assets/images/culture-slab.webp" alt="Signal Static culture collectible on a dark gallery plinth" width="1254" height="1254">
+            </article>
+          </div>
+
+          <div class="hero-showcase-ui">
+            <p class="hero-showcase-status"><span aria-hidden="true"></span> Auto showcase</p>
+            <div class="hero-showcase-actions">
+              <p><strong data-hero-current>01</strong> / <span>03</span></p>
+              <button type="button" data-hero-toggle aria-pressed="true">Pause <span aria-hidden="true">Ⅱ</span></button>
+              <button type="button" data-hero-next aria-label="Show next featured object">Next <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <span class="hero-showcase-progress" data-hero-progress aria-hidden="true"></span>
+          <span class="edition-stamp" aria-label="Limited WildSlabs editions">W/S</span>
+        </div>
+        <figcaption>
+          <span>Featured objects</span>
+          <span data-hero-caption>Signal Study No. 01</span>
+          <span>2026</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div class="ticker" aria-label="WildSlabs collection values">
+      <div class="ticker-track">
+        <span>Numbered editions</span><i></i>
+        <span>Archival materials</span><i></i>
+        <span>Authenticated objects</span><i></i>
+        <span>Worldwide delivery</span><i></i>
+        <span aria-hidden="true">Numbered editions</span><i aria-hidden="true"></i>
+        <span aria-hidden="true">Archival materials</span><i aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- Featured collection cards. The full card is interactive without adding visual button clutter. -->
+    <section class="collections section-shell" id="collections" aria-labelledby="collections-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Featured collections</p>
+          <h2 id="collections-title">Curated, never crowded.</h2>
+        </div>
+        <p>Small runs. Carefully chosen stories. Every release is presented with room to be seen.</p>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card collection-card--large reveal" data-tilt data-tilt-strength="4">
+          <a class="card-link" href="collection.html?type=sport" data-cursor-text="View" aria-label="View the Sport Study collection"></a>
+          <div class="collection-media media-light tilt-surface">
+            <img src="assets/images/sports-slab.webp" alt="Abstract sports-inspired acrylic collectible" width="1200" height="1200" loading="lazy">
+            <span class="surface-glare" aria-hidden="true"></span>
+            <span class="object-index">01</span>
+          </div>
+          <div class="card-meta">
+            <div><p>Sport Study</p><span>12 objects</span></div>
+            <span aria-hidden="true">↗</span>
+          </div>
+        </article>
+
+        <article class="collection-card reveal" data-delay="1" data-tilt data-tilt-strength="4">
+          <a class="card-link" href="collection.html?type=culture" data-cursor-text="View" aria-label="View the Culture Archive collection"></a>
+          <div class="collection-media media-dark tilt-surface">
+            <img src="assets/images/culture-slab.webp" alt="Retro-futurist culture collectible on a dark gallery plinth" width="1200" height="1200" loading="lazy">
+            <span class="surface-glare" aria-hidden="true"></span>
+            <span class="object-index">02</span>
+          </div>
+          <div class="card-meta">
+            <div><p>Culture Archive</p><span>08 objects</span></div>
+            <span aria-hidden="true">↗</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- New release combines scarcity information with an immediate purchase path. -->
+    <section class="release section-shell section-dark" id="new-release" aria-labelledby="release-title">
+      <div class="release-top reveal">
+        <p class="eyebrow">Current release / Drop 001</p>
+        <p class="availability"><span></span> 07 remaining</p>
+      </div>
+      <div class="release-layout">
+        <div class="release-visual reveal">
+          <!-- Homepage 360° viewer: the object auto-rotates and can also be dragged. -->
+          <div class="home-360-viewer" data-home-360 tabindex="0" role="slider" aria-label="Signal Static automatic 360 degree viewer. Drag or use arrow keys to rotate." aria-valuemin="0" aria-valuemax="359" aria-valuenow="0">
+            <div class="viewer-stage" aria-hidden="true">
+              <div class="slab-model" data-home-slab-model>
+                <div class="slab-face slab-face--front"><img src="assets/images/culture-slab.webp" alt=""></div>
+                <div class="slab-face slab-face--back"><span>W/S</span><small>WS–C01 / 2026</small></div>
+                <div class="slab-face slab-face--left"></div>
+                <div class="slab-face slab-face--right"></div>
+                <div class="slab-face slab-face--top"></div>
+                <div class="slab-face slab-face--bottom"></div>
+              </div>
+            </div>
+            <div class="home-360-controls">
+              <p><span></span> Auto 360° / Drag to rotate</p>
+              <button type="button" data-home360-toggle aria-pressed="true">Pause <span aria-hidden="true">Ⅱ</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="release-copy reveal" data-delay="1">
+          <p class="release-code">WS–C01 / 2026</p>
+          <h2 id="release-title">Signal<br>Static</h2>
+          <p class="release-description">A study in broadcast memory, chrome surfaces and the cultural signals that refuse to disappear.</p>
+          <a class="arrow-link release-viewer-link" href="product.html?id=signal-static" data-cursor-text="Rotate">Open 360° viewer <span aria-hidden="true">↗</span></a>
+          <dl class="release-details">
+            <div><dt>Edition</dt><dd>25 + 2 AP</dd></div>
+            <div><dt>Material</dt><dd>Archival print / acrylic</dd></div>
+            <div><dt>Dimensions</dt><dd>210 × 148 × 24 mm</dd></div>
+            <div><dt>Certificate</dt><dd>Numbered & signed</dd></div>
+          </dl>
+          <div class="purchase-row">
+            <p>$640 <span>USD</span></p>
+            <button class="button button-light" type="button" data-add-product data-cursor-text="Add" data-id="signal-static" data-name="Signal Static" data-price="640" data-image="assets/images/culture-slab.webp">
+              Add to bag <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop sample proves collection filtering, product quick-view and cart interactions. -->
+    <section class="objects section-shell" id="archive" aria-labelledby="objects-title">
+      <div class="section-heading section-heading--objects reveal">
+        <div>
+          <p class="eyebrow">Selected objects</p>
+          <h2 id="objects-title">The viewing room.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter objects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="sport" aria-pressed="false">Sport</button>
+          <button class="filter" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+        </div>
+      </div>
+
+      <div class="product-grid" data-product-grid>
+        <article class="product-card reveal" data-category="sport" data-tilt data-tilt-strength="4">
+          <button class="product-visual media-light tilt-surface" type="button" data-quick-view data-cursor-text="View" data-id="field-lines" data-name="Field Lines No. 03" data-price="380" data-edition="Edition of 40" data-image="assets/images/sports-slab.webp" aria-label="Quick view Field Lines No. 03">
+            <img src="assets/images/sports-slab.webp" alt="Field Lines No. 03 sports collectible" width="900" height="900" loading="lazy">
+            <span class="surface-glare" aria-hidden="true"></span>
+            <span>Quick view</span>
+          </button>
+          <div class="product-info"><div><h3><a href="product.html?id=field-lines">Field Lines No. 03</a></h3><p>Edition of 40</p></div><p>$380</p></div>
+        </article>
+
+        <article class="product-card reveal" data-category="culture" data-delay="1" data-tilt data-tilt-strength="4">
+          <button class="product-visual media-grey product-visual--crop tilt-surface" type="button" data-quick-view data-cursor-text="View" data-id="after-image" data-name="After Image" data-price="520" data-edition="Edition of 30" data-image="assets/images/culture-slab.webp" aria-label="Quick view After Image">
+            <img src="assets/images/culture-slab.webp" alt="After Image culture collectible" width="900" height="900" loading="lazy">
+            <span class="surface-glare" aria-hidden="true"></span>
+            <span>Quick view</span>
+          </button>
+          <div class="product-info"><div><h3><a href="product.html?id=after-image">After Image</a></h3><p>Edition of 30</p></div><p>$520</p></div>
+        </article>
+
+        <article class="product-card reveal" data-category="sport" data-delay="2" data-tilt data-tilt-strength="4">
+          <button class="product-visual media-grey product-visual--hero tilt-surface" type="button" data-quick-view data-cursor-text="View" data-id="home-ground" data-name="Home Ground" data-price="450" data-edition="Edition of 35" data-image="assets/images/hero-collectible.webp" aria-label="Quick view Home Ground">
+            <img src="assets/images/hero-collectible.webp" alt="Home Ground sports collectible" width="1600" height="1000" loading="lazy">
+            <span class="surface-glare" aria-hidden="true"></span>
+            <span>Quick view</span>
+          </button>
+          <div class="product-info"><div><h3><a href="product.html?id=home-ground">Home Ground</a></h3><p>Edition of 35</p></div><p>$450</p></div>
+        </article>
+
+        <article class="product-card reveal" data-category="culture" data-tilt data-tilt-strength="4">
+          <button class="product-visual media-dark product-visual--tight tilt-surface" type="button" data-quick-view data-cursor-text="View" data-id="night-channel" data-name="Night Channel" data-price="600" data-edition="Edition of 20" data-image="assets/images/culture-slab.webp" aria-label="Quick view Night Channel">
+            <img src="assets/images/culture-slab.webp" alt="Night Channel culture collectible" width="900" height="900" loading="lazy">
+            <span class="surface-glare surface-glare--dark" aria-hidden="true"></span>
+            <span>Quick view</span>
+          </button>
+          <div class="product-info"><div><h3><a href="product.html?id=night-channel">Night Channel</a></h3><p>Edition of 20</p></div><p>$600</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="studio section-shell" id="studio" aria-labelledby="studio-title">
+      <div class="studio-number reveal">W/S</div>
+      <div class="studio-copy reveal" data-delay="1">
+        <p class="eyebrow">The studio</p>
+        <h2 id="studio-title">Not merchandise.<br>Material culture.</h2>
+        <p>WildSlabs brings the visual language of sport, music, film and shared memory into collectible objects made to live beyond the moment.</p>
+        <button class="arrow-link arrow-link--button" type="button" data-open-enquiry>Talk to the studio <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="newsletter section-shell" aria-labelledby="newsletter-title">
+      <p class="eyebrow">Private view</p>
+      <div>
+        <h2 id="newsletter-title">First access.<br>No noise.</h2>
+        <form class="signup-form" data-signup-form>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="Email address" required>
+          <button type="submit" aria-label="Join the private view">Join <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="form-message" data-form-message aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-wordmark" href="#top">WILDSLABS</a>
+    <div class="footer-grid">
+      <div><p>Navigate</p><a href="collection.html?type=all">Collections</a><a href="#new-release">Releases</a><a href="collection.html?type=all">Archive</a></div>
+      <div><p>Connect</p><span class="footer-link-disabled" aria-label="Instagram profile coming soon">Instagram / Soon</span><a href="information.html#journal">Journal</a><button type="button" data-open-enquiry>Enquiries</button></div>
+      <div><p>Information</p><a href="information.html#shipping">Shipping</a><a href="information.html#authenticity">Authenticity</a><a href="information.html#terms">Terms</a></div>
+      <div class="footer-note"><p>WildSlabs / 2026</p><span>Made for collectors,<br>not algorithms.</span></div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer. Local storage keeps demo cart state between visits. -->
+  <aside class="cart-drawer" id="cart-drawer" data-cart-drawer aria-hidden="true" aria-labelledby="cart-title">
+    <div class="drawer-head"><h2 id="cart-title">Your bag</h2><button type="button" data-close-cart aria-label="Close bag">Close</button></div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="empty-cart" data-empty-cart><p>No objects selected.</p><button class="arrow-link arrow-link--button" type="button" data-close-cart>Continue viewing <span>↘</span></button></div>
+    <div class="cart-summary" data-cart-summary hidden>
+      <div><span>Subtotal</span><strong data-cart-total>$0</strong></div>
+      <p>Shipping and taxes calculated at checkout.</p>
+      <button class="button button-dark" type="button" data-checkout>Secure checkout <span aria-hidden="true">↗</span></button>
+    </div>
+  </aside>
+
+  <!-- Quick view modal supplies product details without disrupting the gallery flow. -->
+  <dialog class="quick-view" data-quick-dialog>
+    <button class="modal-close" type="button" data-close-quick aria-label="Close quick view">×</button>
+    <div class="quick-layout">
+      <div class="quick-image media-light"><img data-quick-image src="" alt=""></div>
+      <div class="quick-copy">
+        <p class="eyebrow">WildSlabs object</p>
+        <h2 data-quick-name></h2>
+        <p data-quick-edition></p>
+        <p class="quick-description">Archival pigment print sealed in crystal-clear acrylic, finished by hand and supplied with a numbered certificate of authenticity.</p>
+        <a class="arrow-link quick-page-link" href="product.html" data-quick-page>View product & 360° <span aria-hidden="true">↗</span></a>
+        <div class="quick-buy"><strong data-quick-price></strong><button class="button button-dark" type="button" data-quick-add>Add to bag <span>+</span></button></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Enquiry dialog demonstrates the enquiry path for rare or private-sale pieces. -->
+  <dialog class="enquiry-dialog" data-enquiry-dialog>
+    <button class="modal-close modal-close--light" type="button" data-close-enquiry aria-label="Close enquiry">×</button>
+    <div class="enquiry-inner">
+      <p class="eyebrow">Private enquiry</p>
+      <h2>Start a conversation.</h2>
+      <p>Tell us what you are looking for. The studio will respond within two working days.</p>
+      <form data-enquiry-form>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="button button-light" type="submit">Send enquiry <span>↗</span></button>
+      </form>
+      <p class="form-message" data-enquiry-message aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <div class="page-overlay" data-overlay></div>
+
+</body>
+</html>
